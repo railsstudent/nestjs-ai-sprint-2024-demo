@@ -15,7 +15,10 @@ export class StorytellingService {
     this.logger.log(`categories: ${categories}`);
 
     const promptTemplate = ChatPromptTemplate.fromMessages([
-      ['system', 'You are a storyteller who can tell a story about certain objects, animals, and human being'],
+      [
+        'system',
+        'You are a professional storyteller with vivid imagination who can tell a story about certain objects, animals, and human being',
+      ],
       [
         'user',
         `Please write a story with the following categories delimited by triple dashes:
