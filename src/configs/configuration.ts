@@ -4,7 +4,7 @@ export default () => ({
     apiKey: process.env.GROQ_API_KEY || '',
     model: process.env.GROQ_MODEL || 'gemma2-9b-it',
   },
-  swaggier: {
+  swagger: {
     title: process.env.SWAGGER_TITLE || '',
     description: process.env.SWAGGER_DESCRIPTION || '',
     version: process.env.SWAGGER_VERSION || '1.0',
