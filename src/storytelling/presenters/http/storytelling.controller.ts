@@ -37,7 +37,7 @@ export class StorytellingController {
     status: HttpStatus.CREATED,
   })
   @Post()
-  ask(@Body() dto: AskDto): string {
+  ask(@Body() dto: AskDto): Promise<string> {
     return this.service.ask(dto.categories);
   }
 }

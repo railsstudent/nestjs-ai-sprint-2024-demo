@@ -4,7 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { GROQ_CHAT_MODEL } from '../constants/groq.constant';
 import { GroqConfig } from '../types/groq-config.type';
 
-export function InjectModel() {
+export function InjectChatModel() {
   return Inject(GROQ_CHAT_MODEL);
 }
 
