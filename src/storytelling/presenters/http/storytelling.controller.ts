@@ -37,7 +37,8 @@ export class StorytellingController {
     status: HttpStatus.CREATED,
   })
   @Post()
-  ask(@Body() dto: AskDto): Promise<string> {
-    return this.service.ask(dto.categories);
+  async ask(@Body() dto: AskDto): Promise<{ story: string }> {
+    const story = await this.service.ask(dto.categories);
+    return { story };
   }
 }
