@@ -24,7 +24,21 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A simple langchain application that generates a story based on given categories
+
+## Environment variables
+
+Copy from .env.example to .env
+
+```text
+PORT=3001
+GROQ_API_KEY=<GROQ API KEY>
+GROQ_MODEL=gemma2-9b-it
+SWAGGER_TITLE=AI Storytelling Application
+SWAGGER_DESCRIPTION=This application uses the prompt to ask the LLM to generate a short story.
+SWAGGER_VERSION=1.0
+SWAGGER_TAG=Gemma 2 9B, Groq, Langchain.js
+```
 
 ## Installation
 
